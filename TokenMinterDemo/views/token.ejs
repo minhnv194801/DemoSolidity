@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <title>Token</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Token</h1>
+    </header>
+
+    <section style="float:left; width:40%; margin:5%">
+      <h1>Get Token's Info</h1>
+      <div>
+        <p>Token's address: <input id="address" type="text" value="<%= address %>" /></p>
+	      <p><button id="submit_button" type="button">Submit</button></p>
+      </div>
+
+      <section id="token_info_feedback"></section>
+    </section>
+
+    <section style="float:right; width:40%; margin:5%">
+      <h1>Transfer Token</h1>
+      <div>
+        <p>Token's address: <input id="transfer_token_address" type="text" value="<%= address %>" /></p>
+        <p>Address to transfer to: <input id="address_to_transfer" type="text" /></p>
+	      <p><button id="transfer_button" type="button">Transfer</button></p>
+      </div>
+
+      <section id="transfer_feedback"></section>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="token.js"></script>
+  </body>
+</html>
