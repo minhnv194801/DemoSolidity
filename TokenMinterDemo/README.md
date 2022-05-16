@@ -1,6 +1,8 @@
 # Token Minter Demo
 Demo Token Minter using NodeJs, EJS, Express
 
+Token Minter will take the string input by user, push it into IPFS and then push the received Cid into a newly created Token in the blockchain
+
 ### Requirement
 - NodeJs v16
 - Metamask installed browser
